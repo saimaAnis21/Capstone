@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap");
+@font-face {
+  font-family: "COCOGOOSE";
+  src: url("../fonts/Cocogoose_trial.otf");
+}
+.bg-red {
+  background-color: #EC5242;
+}
+
+.txt-red {
+  color: #EC5242;
+}
+
+.bg-black {
+  background-color: #272A31;
+}
+
+.txt-black {
+  color: #272A31;
+}
+
+.bg-grey {
+  background-color: #D3D3D3;
+}
+
+.txt-grey {
+  color: #D3D3D3;
+}
+
+.bg-darkred {
+  background-color: #ff0000;
+}
+
+.txt-darkred {
+  color: #ff0000;
+}
+
+.bg-darkgrey {
+  background-color: #333131;
+}
+
+.txt-darkgrey {
+  color: #333131;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #D3D3D3;
+}
+
+.h-px-50 {
+  height: 50px;
+}
+
+.h-px-80 {
+  height: 80px;
+}
+
+.wt_300 {
+  font-weight: 300;
+}
+
+.font_lato {
+  font-family: "Lato", sans-serif;
+}
+
+.font_coco {
+  font-family: "COCOGOOSE";
+}
+
+.right_nav {
+  display: none;
+  position: relative;
+  right: 70px;
+  height: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hambrgr {
+  display: inline;
+  position: relative;
+  top: 10px;
+  left: 10px;
+  z-index: 2;
+}
+
+.logo_nav {
+  display: none;
+  height: 35px;
+  width: auto;
+  position: relative;
+  top: 20px;
+  left: 70px;
+}
+
+.hero_sec {
+  height: 500px;
+  position: absolute;
+  top: 0px;
+  z-index: 1;
+  background-image: url("../backgrounds/white-wood-wall-texture-bg.jpg");
+}
+
+.zindex-0 {
+  z-index: 0;
+}
+
+@media (max-width: 768) {
+  .d-mob-none {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .hero_sec {
+    top: 130px;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
