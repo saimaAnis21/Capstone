@@ -3,6 +3,10 @@
   font-family: "COCOGOOSE";
   src: url("../fonts/Cocogoose_trial.otf");
 }
+.font_coco {
+  font-family: "COCOGOOSE";
+}
+
 .bg-red {
   background-color: #EC5242;
 }
@@ -43,6 +47,10 @@
   color: #333131;
 }
 
+body {
+  font-family: "Lato", sans-serif;
+}
+
 a {
   text-decoration: none;
 }
@@ -64,18 +72,8 @@ a:hover {
   font-weight: 300;
 }
 
-.font_lato {
-  font-family: "Lato", sans-serif;
-}
-
-.font_coco {
-  font-family: "COCOGOOSE";
-}
-
 .right_nav {
   display: none;
-  position: relative;
-  right: 70px;
   height: 100%;
   align-items: center;
   justify-content: space-between;
@@ -83,24 +81,35 @@ a:hover {
 
 .hambrgr {
   display: inline;
-  position: relative;
   top: 10px;
   left: 10px;
   z-index: 2;
 }
 
+.p-relative {
+  position: relative;
+}
+
+.p-absolute {
+  position: absolute;
+}
+
+.left-150 {
+  left: 150px;
+}
+
+.right-150 {
+  right: 150px;
+}
+
 .logo_nav {
-  display: none;
   height: 35px;
   width: auto;
-  position: relative;
   top: 20px;
-  left: 70px;
 }
 
 .hero_sec {
   height: 500px;
-  position: absolute;
   top: 0px;
   z-index: 1;
   background-image: url("../backgrounds/white-wood-wall-texture-bg.jpg");

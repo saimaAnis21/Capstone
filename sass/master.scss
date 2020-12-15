@@ -1,13 +1,6 @@
+@import 'fonts.scss';
+@import 'variables.scss';
 
-@font-face {font-family: "COCOGOOSE"; src: url('../fonts/Cocogoose_trial.otf'); } 
-
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap');
-
-$red:#EC5242;
-$black:#272A31;
-$grey:#D3D3D3;
-$darkred: #ff0000;
-$darkgrey:rgb(51, 49, 49);
 
 
 $colors:(red:$red, black:$black, grey:$grey, darkred:$darkred, darkgrey:$darkgrey);
@@ -19,6 +12,10 @@ $colors:(red:$red, black:$black, grey:$grey, darkred:$darkred, darkgrey:$darkgre
     .txt-#{$prop}
     {color: $value;}
 
+}
+
+body{
+    font-family: 'Lato', sans-serif;
 }
 
 a{
@@ -43,18 +40,9 @@ a:hover{
     font-weight: 300;
 }
 
-.font_lato{
-    font-family: 'Lato', sans-serif;
-}
-
-.font_coco{
-    font-family: 'COCOGOOSE';
-}
 
 .right_nav{
     display: none;
-    position: relative;
-    right: 70px;
     height: 100%;
     align-items: center;
     justify-content: space-between;
@@ -63,26 +51,37 @@ a:hover{
 
 .hambrgr{
     display: inline;
-    position: relative;
     top: 10px;
     left:10px;
     z-index: 2;
 }
 
+.p-relative{
+    position: relative;
+}
+
+.p-absolute{
+    position: absolute;
+}
+
+.left-150{
+left:150px;
+}
+
+.right-150{
+    right: 150px;
+}
 
 .logo_nav{
-    display: none;
-    height: 35px;
+     height: 35px;
      width: auto;
-     position: relative;
      top:20px;
-     left: 70px;
-
+     
 }
 
 .hero_sec{
     height: 500px;
-    position: absolute;
+    
     top:0px;
     z-index: 1;
     background-image: url('../backgrounds/white-wood-wall-texture-bg.jpg');
