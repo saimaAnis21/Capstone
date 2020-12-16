@@ -86,10 +86,6 @@ padding-top: 80px;
     {display:none;}
 }
 
-.line_height_60{
-    line-height: 60px;
-}
-
 .pad_top{
     margin-top: 20px;
 }
@@ -110,13 +106,29 @@ padding-top: 80px;
 }
 }
 
-.tkts{
-width:300px;
-height: 80px;
-background-color: $red;
-display: flex;
-align-items: center;
-justify-content: center;
+main{
+    position: absolute;
+    top: 0px;
+    @media (min-width:768px){
+        top:130px;
+    }
+}
+
+.p-top{
+    padding-top: 5px;
+}
+.p-bottom{
+    padding-bottom: 5px;
+}
+
+.partners{
+    height:300px;
+    background-color: $black;
+}
+
+.partners img{
+    height: 50px;
+    width: auto;
 }
 
 @media only screen and (min-width: 768px){

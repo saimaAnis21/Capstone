@@ -27,6 +27,26 @@
   font-size: 60px;
 }
 
+.all-upper-case {
+  text-transform: uppercase;
+}
+
+.txt-undrline {
+  text-decoration: underline;
+}
+
+.txt-italic {
+  font-style: italic;
+}
+
+.line_height_60 {
+  line-height: 60px;
+}
+
+.line_height_sm {
+  line-height: 15px;
+}
+
 .right_nav {
   display: none;
   height: 100%;
@@ -49,14 +69,8 @@
 
 .hero_sec {
   height: 700px;
-  top: 0px;
   z-index: 1;
   background-image: url("../backgrounds/white-wood-wall-texture-bg.jpg");
-}
-@media (min-width: 768px) {
-  .hero_sec {
-    top: 130px;
-  }
 }
 
 .width-para {
@@ -69,15 +83,13 @@
 }
 
 .main-prog {
-  height: 600px;
+  height: 580px;
   background-image: url("../backgrounds/TEDx_bg.png");
-  position: absolute;
-  top: 700px;
   width: 100%;
 }
 @media (min-width: 768px) {
   .main-prog {
-    top: 830px;
+    height: 400px;
   }
 }
 
@@ -123,6 +135,59 @@
     flex-direction: column;
     height: 100%;
   }
+}
+
+.tkts {
+  width: 300px;
+  height: 80px;
+  background-color: #EC5242;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.grey-undrline {
+  width: 25px;
+  height: 2px;
+  background-color: #D3D3D3;
+}
+
+.feat-spkrs {
+  width: 100%;
+  height: 600px;
+  background-color: white;
+}
+
+.fs-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.speakers-grid {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(6, 1fr);
+  row-gap: 10px;
+}
+@media (min-width: 768px) {
+  .speakers-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    column-gap: 10px;
+    width: 75%;
+  }
+}
+
+.speakers-item {
+  display: flex;
+  align-items: flex-start;
+}
+
+.spkr-img {
+  width: 120px;
+  height: 120px;
 }
 
 .bg-red {
@@ -243,10 +308,6 @@ a:hover {
   }
 }
 
-.line_height_60 {
-  line-height: 60px;
-}
-
 .pad_top {
   margin-top: 20px;
 }
@@ -265,13 +326,32 @@ a:hover {
   }
 }
 
-.tkts {
-  width: 300px;
-  height: 80px;
-  background-color: #EC5242;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+main {
+  position: absolute;
+  top: 0px;
+}
+@media (min-width: 768px) {
+  main {
+    top: 130px;
+  }
+}
+
+.p-top {
+  padding-top: 5px;
+}
+
+.p-bottom {
+  padding-bottom: 5px;
+}
+
+.partners {
+  height: 300px;
+  background-color: #272A31;
+}
+
+.partners img {
+  height: 50px;
+  width: auto;
 }
 
 @media only screen and (min-width: 768px) {
