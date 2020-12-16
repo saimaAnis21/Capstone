@@ -52,7 +52,7 @@
     background-color: $red;
 }
 
-.mp-wrap{
+.flex-wrap{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -109,14 +109,12 @@
 
 .feat-spkrs{
     width: 100%;
-    height: 600px;
+    height: 950px;
     background-color: white;
-}
 
-.fs-wrap{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @media (min-width:768px){
+        height: 700px;
+    }
 }
 
 .speakers-grid{
@@ -143,4 +141,19 @@
 .spkr-img{
     width: 120px;
     height: 120px;
+}
+
+
+.partners{
+    height:250px;
+    background-color: $black;
+}
+
+.partners img{
+    height: 50px;
+    width: auto;
+
+    @media (min-width:768px){
+        height: 70px;
+    }
 }

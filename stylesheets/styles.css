@@ -99,7 +99,7 @@
   background-color: #EC5242;
 }
 
-.mp-wrap {
+.flex-wrap {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -154,14 +154,13 @@
 
 .feat-spkrs {
   width: 100%;
-  height: 600px;
+  height: 950px;
   background-color: white;
 }
-
-.fs-wrap {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+@media (min-width: 768px) {
+  .feat-spkrs {
+    height: 700px;
+  }
 }
 
 .speakers-grid {
@@ -188,6 +187,21 @@
 .spkr-img {
   width: 120px;
   height: 120px;
+}
+
+.partners {
+  height: 250px;
+  background-color: #272A31;
+}
+
+.partners img {
+  height: 50px;
+  width: auto;
+}
+@media (min-width: 768px) {
+  .partners img {
+    height: 70px;
+  }
 }
 
 .bg-red {
@@ -342,16 +356,6 @@ main {
 
 .p-bottom {
   padding-bottom: 5px;
-}
-
-.partners {
-  height: 300px;
-  background-color: #272A31;
-}
-
-.partners img {
-  height: 50px;
-  width: auto;
 }
 
 @media only screen and (min-width: 768px) {
