@@ -1,9 +1,8 @@
 @import 'fonts.scss';
 @import 'variables.scss';
+@import 'components.scss';
 
-
-
-$colors:(red:$red, black:$black, grey:$grey, darkred:$darkred, darkgrey:$darkgrey);
+$colors:(red:$red, black:$black, grey:$grey, darkred:$darkred, darkgrey:$darkgrey, white:#fff);
 
 @each $prop, $value in $colors{
     .bg-#{$prop}
@@ -16,6 +15,10 @@ $colors:(red:$red, black:$black, grey:$grey, darkred:$darkred, darkgrey:$darkgre
 
 body{
     font-family: 'Lato', sans-serif;
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    
 }
 
 a{
@@ -36,26 +39,6 @@ a:hover{
     height: 80px;
 }
 
-.wt_300{
-    font-weight: 300;
-}
-
-
-.right_nav{
-    display: none;
-    height: 100%;
-    align-items: center;
-    justify-content: space-between;
-    
-}
-
-.hambrgr{
-    display: inline;
-    top: 10px;
-    left:10px;
-    z-index: 2;
-}
-
 .p-relative{
     position: relative;
 }
@@ -64,49 +47,96 @@ a:hover{
     position: absolute;
 }
 
-.left-150{
-left:150px;
-}
-
-.right-150{
-    right: 150px;
-}
-
-.logo_nav{
-     height: 35px;
-     width: auto;
-     top:20px;
-     
-}
-
-.hero_sec{
-    height: 500px;
-    
-    top:0px;
-    z-index: 1;
-    background-image: url('../backgrounds/white-wood-wall-texture-bg.jpg');
-      
-}
-
 .zindex-0{
     z-index: 0;
 }
 
+
+.border_width{
+    border-width: 2px;
+    
+}
+
+.border_color_white{
+    border-color: white;
+}
+
+.border_color_red{
+    border-color: red;
+}
+
+.border_style{
+    border-style: solid;
+}
+
+.p-10{
+    padding: 10px;
+}
+
+.pad-top-80{
+padding-top: 80px;
+}
+
+.width-sm-90{
+    width: 90%;
+}
+
 .d-mob-none{    
-    @media (max-width:768)
+    @media (max-width:768px)
     {display:none;}
 }
 
+.line_height_60{
+    line-height: 60px;
+}
+
+.pad_top{
+    margin-top: 20px;
+}
+
+.pad-sm-10{
+   
+  padding: 20px;
+ 
+}
+
+.pad-left{
+    padding-left: 20px;
+}
+
+.width-55{
+    @media (max-width:768px){
+    width: 55%;
+}
+}
+
+.tkts{
+width:300px;
+height: 80px;
+background-color: $red;
+display: flex;
+align-items: center;
+justify-content: center;
+}
 
 @media only screen and (min-width: 768px){
-    
-    
-   .hero_sec{
-       
-       top: 130px;
-   }
    
+   
+   .left-md-150{
+      left:150px;
+     }
 
+     .right-md-150{
+        right: 150px;
+    }
+
+    .p-md-absolute{
+        position: absolute;
+    }
+
+    .width-md-70{
+        width: 70%;
+    }
 }
 
 

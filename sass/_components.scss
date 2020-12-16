@@ -1,0 +1,98 @@
+
+
+.right_nav{
+    display: none;
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.hambrgr{
+    display: inline;
+    top: 10px;
+    left: 30px;
+    z-index: 5;
+}
+
+.logo_nav{
+    height: 35px;
+    width: auto;
+    top:20px;
+    
+}
+
+.hero_sec{
+    height: 700px;
+    top:0px;
+    z-index: 1;
+    background-image: url('../backgrounds/white-wood-wall-texture-bg.jpg');
+
+    @media(min-width: 768px){
+        top: 130px;
+    }
+      
+}
+
+.width-para{
+    width: 100%;
+    @media (min-width:768px)
+    {width: 50%;}
+}
+
+.main-prog{
+    height: 600px;
+    background-image: url('../backgrounds/TEDx_bg.png');
+    position: absolute;
+    top:700px;
+    width: 100%;
+    @media(min-width:768px){
+        top:830px;
+    }
+}
+
+
+.mp-undrline{
+    width:50px;
+    height: 2px;
+    background-color: $red;
+}
+
+.mp-wrap{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.programs{
+    padding-top: 50px;
+    padding-bottom: 20px;
+    width: 90%;
+    
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 1fr);
+    row-gap: 10px;
+
+    @media (min-width:768px){
+          grid-template-columns: repeat(5,1fr);
+          grid-template-rows: 1fr;
+          column-gap: 10px;
+    }
+
+}
+
+.prog-item{
+    display: flex;
+    align-items: center;
+    background-color: rgba($color: grey, $alpha: 0.5);
+    height: 60px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+
+    @media (min-width:768px){
+        flex-direction: column;
+        height: 100%;
+    }
+
+}
