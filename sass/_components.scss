@@ -145,7 +145,7 @@
 
 
 .partners{
-    height:250px;
+    height:200px;
     background-color: $black;
 }
 
@@ -154,6 +154,7 @@
     width: auto;
 
     @media (min-width:768px){
-        height: 70px;
+        height: 60px;
     }
 }
+

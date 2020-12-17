@@ -190,7 +190,7 @@
 }
 
 .partners {
-  height: 250px;
+  height: 200px;
   background-color: #272A31;
 }
 
@@ -200,7 +200,7 @@
 }
 @media (min-width: 768px) {
   .partners img {
-    height: 70px;
+    height: 60px;
   }
 }
 
@@ -356,6 +356,19 @@ main {
 
 .p-bottom {
   padding-bottom: 5px;
+}
+
+.p-top-40 {
+  padding-top: 40px;
+}
+
+.footer-div {
+  height: 150px;
+}
+
+.logo_footer {
+  height: 50px;
+  width: auto;
 }
 
 @media only screen and (min-width: 768px) {
