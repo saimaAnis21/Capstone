@@ -25,6 +25,7 @@ main{
 }
 
 .programs{
+    width: 90%;
     padding-top: 50px;
     padding-bottom: 20px;
     display: grid;
@@ -60,6 +61,9 @@ main{
     width: auto;
 }
 
+.width-hero{
+    width: 90%;
+}
 
 /*View Above 768px Desktop V*/
 @media only screen and (min-width: 768px){
@@ -116,7 +120,7 @@ main{
          position: absolute;
      }
  
-     .width-md-70{
+     .width-hero{
          width: 70%;
      }
 
