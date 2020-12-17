@@ -47,6 +47,7 @@
   line-height: 15px;
 }
 
+/* header Classes */
 .right_nav {
   display: none;
   height: 100%;
@@ -67,32 +68,14 @@
   top: 20px;
 }
 
+/* Hero section classes */
 .hero_sec {
   height: 700px;
   z-index: 1;
   background-image: url("../backgrounds/white-wood-wall-texture-bg.jpg");
 }
 
-.width-para {
-  width: 100%;
-}
-@media (min-width: 768px) {
-  .width-para {
-    width: 50%;
-  }
-}
-
-.main-prog {
-  height: 580px;
-  background-image: url("../backgrounds/TEDx_bg.png");
-  width: 100%;
-}
-@media (min-width: 768px) {
-  .main-prog {
-    height: 400px;
-  }
-}
-
+/* Main Program Classes */
 .mp-undrline {
   width: 50px;
   height: 2px;
@@ -105,38 +88,7 @@
   align-items: center;
 }
 
-.programs {
-  padding-top: 50px;
-  padding-bottom: 20px;
-  width: 90%;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(5, 1fr);
-  row-gap: 10px;
-}
-@media (min-width: 768px) {
-  .programs {
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: 1fr;
-    column-gap: 10px;
-  }
-}
-
-.prog-item {
-  display: flex;
-  align-items: center;
-  background-color: rgba(128, 128, 128, 0.5);
-  height: 60px;
-  padding-bottom: 10px;
-  padding-top: 10px;
-}
-@media (min-width: 768px) {
-  .prog-item {
-    flex-direction: column;
-    height: 100%;
-  }
-}
-
+/* tickets classes */
 .tkts {
   width: 300px;
   height: 80px;
@@ -152,33 +104,7 @@
   background-color: #D3D3D3;
 }
 
-.feat-spkrs {
-  width: 100%;
-  height: 950px;
-  background-color: white;
-}
-@media (min-width: 768px) {
-  .feat-spkrs {
-    height: 700px;
-  }
-}
-
-.speakers-grid {
-  display: grid;
-  width: 100%;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(6, 1fr);
-  row-gap: 10px;
-}
-@media (min-width: 768px) {
-  .speakers-grid {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    column-gap: 10px;
-    width: 75%;
-  }
-}
-
+/* featured speakers classes */
 .speakers-item {
   display: flex;
   align-items: flex-start;
@@ -189,21 +115,127 @@
   height: 120px;
 }
 
+/* Partners classes */
 .partners {
   height: 200px;
   background-color: #272A31;
+}
+
+/*View below 768px Mobile V*/
+@media only screen and (max-width: 768px) {
+  .d-mob-none {
+    display: none;
+  }
+
+  .width-sm-55 {
+    width: 55%;
+  }
+}
+main {
+  top: 0px;
+}
+
+.width-para {
+  width: 100%;
+}
+
+.main-prog {
+  height: 580px;
+  background-image: url("../backgrounds/TEDx_bg.png");
+}
+
+.programs {
+  padding-top: 50px;
+  padding-bottom: 20px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(5, 1fr);
+  row-gap: 10px;
+}
+
+.prog-item {
+  display: flex;
+  align-items: center;
+  background-color: rgba(128, 128, 128, 0.5);
+  height: 60px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+.feat-spkrs {
+  height: 950px;
+  background-color: white;
+}
+
+.speakers-grid {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(6, 1fr);
+  row-gap: 10px;
 }
 
 .partners img {
   height: 50px;
   width: auto;
 }
-@media (min-width: 768px) {
+
+/*View Above 768px Desktop V*/
+@media only screen and (min-width: 768px) {
+  main {
+    top: 130px;
+  }
+
+  .width-para {
+    width: 50%;
+  }
+
+  .main-prog {
+    height: 400px;
+  }
+
+  .programs {
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr;
+    column-gap: 10px;
+  }
+
+  .prog-item {
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .feat-spkrs {
+    height: 700px;
+  }
+
+  .speakers-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    column-gap: 10px;
+    width: 75%;
+  }
+
   .partners img {
     height: 60px;
   }
-}
 
+  .left-md-150 {
+    left: 150px;
+  }
+
+  .right-md-150 {
+    right: 150px;
+  }
+
+  .p-md-absolute {
+    position: absolute;
+  }
+
+  .width-md-70 {
+    width: 70%;
+  }
+}
 .bg-red {
   background-color: #EC5242;
 }
@@ -312,14 +344,8 @@ a:hover {
   padding-top: 80px;
 }
 
-.width-sm-90 {
+.width-90 {
   width: 90%;
-}
-
-@media (max-width: 768px) {
-  .d-mob-none {
-    display: none;
-  }
 }
 
 .pad_top {
@@ -332,22 +358,6 @@ a:hover {
 
 .pad-left {
   padding-left: 20px;
-}
-
-@media (max-width: 768px) {
-  .width-55 {
-    width: 55%;
-  }
-}
-
-main {
-  position: absolute;
-  top: 0px;
-}
-@media (min-width: 768px) {
-  main {
-    top: 130px;
-  }
 }
 
 .p-top {
@@ -369,24 +379,6 @@ main {
 .logo_footer {
   height: 50px;
   width: auto;
-}
-
-@media only screen and (min-width: 768px) {
-  .left-md-150 {
-    left: 150px;
-  }
-
-  .right-md-150 {
-    right: 150px;
-  }
-
-  .p-md-absolute {
-    position: absolute;
-  }
-
-  .width-md-70 {
-    width: 70%;
-  }
 }
 
 /*# sourceMappingURL=styles.css.map */

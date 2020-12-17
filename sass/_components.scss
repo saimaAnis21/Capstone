@@ -1,5 +1,5 @@
 
-
+/* header Classes */
 .right_nav{
     display: none;
     height: 100%;
@@ -22,29 +22,15 @@
     
 }
 
+/* Hero section classes */
+
 .hero_sec{
     height: 700px;
     z-index: 1;
     background-image: url('../backgrounds/white-wood-wall-texture-bg.jpg');
-
-      
 }
 
-.width-para{
-    width: 100%;
-    @media (min-width:768px)
-    {width: 50%;}
-}
-
-.main-prog{
-    height: 580px;
-    background-image: url('../backgrounds/TEDx_bg.png');
-   width: 100%;
-   @media (min-width:768px) {
-    height: 400px;
-   }
-}
-
+/* Main Program Classes */
 
 .mp-undrline{
     width:50px;
@@ -58,39 +44,7 @@
     align-items: center;
 }
 
-.programs{
-    padding-top: 50px;
-    padding-bottom: 20px;
-    width: 90%;
-    
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(5, 1fr);
-    row-gap: 10px;
-
-    @media (min-width:768px){
-          grid-template-columns: repeat(5,1fr);
-          grid-template-rows: 1fr;
-          column-gap: 10px;
-    }
-
-}
-
-.prog-item{
-    display: flex;
-    align-items: center;
-    background-color: rgba($color: grey, $alpha: 0.5);
-    height: 60px;
-    padding-bottom: 10px;
-    padding-top: 10px;
-
-    @media (min-width:768px){
-        flex-direction: column;
-        height: 100%;
-    }
-
-}
-
+/* tickets classes */
 .tkts{
     width:300px;
     height: 80px;
@@ -98,39 +52,15 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    }
-
-    .grey-undrline{
-        width:25px;
-        height: 2px;
-        background-color: $grey;
-    }
-
-
-.feat-spkrs{
-    width: 100%;
-    height: 950px;
-    background-color: white;
-
-    @media (min-width:768px){
-        height: 700px;
-    }
 }
 
-.speakers-grid{
-    display: grid;
-    width: 100%;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(6,1fr);
-    row-gap: 10px;
-
-    @media (min-width:768px){
-        grid-template-columns: repeat(2,1fr);
-        grid-template-rows: repeat(3,1fr);
-        column-gap: 10px;
-        width: 75%;
-    }
+.grey-undrline{
+    width:25px;
+    height: 2px;
+    background-color: $grey;
 }
+
+/* featured speakers classes */
 
 .speakers-item{
     display: flex;
@@ -143,18 +73,9 @@
     height: 120px;
 }
 
+/* Partners classes */
 
 .partners{
     height:200px;
     background-color: $black;
 }
-
-.partners img{
-    height: 50px;
-    width: auto;
-
-    @media (min-width:768px){
-        height: 60px;
-    }
-}
-

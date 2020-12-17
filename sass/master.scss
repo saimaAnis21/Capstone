@@ -1,6 +1,7 @@
 @import 'fonts.scss';
 @import 'variables.scss';
 @import 'components.scss';
+@import 'media-queries.scss';
 
 $colors:(red:$red, black:$black, grey:$grey, darkred:$darkred, darkgrey:$darkgrey, white:#fff);
 
@@ -77,13 +78,8 @@ a:hover{
 padding-top: 80px;
 }
 
-.width-sm-90{
+.width-90{
     width: 90%;
-}
-
-.d-mob-none{    
-    @media (max-width:768px)
-    {display:none;}
 }
 
 .pad_top{
@@ -98,20 +94,6 @@ padding-top: 80px;
 
 .pad-left{
     padding-left: 20px;
-}
-
-.width-55{
-    @media (max-width:768px){
-    width: 55%;
-}
-}
-
-main{
-    position: absolute;
-    top: 0px;
-    @media (min-width:768px){
-        top:130px;
-    }
 }
 
 .p-top{
@@ -134,26 +116,6 @@ main{
     width: auto;
 }
 
-
-@media only screen and (min-width: 768px){
-   
-   
-   .left-md-150{
-      left:150px;
-     }
-
-     .right-md-150{
-        right: 150px;
-    }
-
-    .p-md-absolute{
-        position: absolute;
-    }
-
-    .width-md-70{
-        width: 70%;
-    }
-}
 
 
 
