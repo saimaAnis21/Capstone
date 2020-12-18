@@ -70,3 +70,23 @@
   height: 200px;
   background-color: $black;
 }
+
+/* drop down menu */
+.dd {
+  position: relative;
+  display: inline-block;
+}
+
+.dd-content {
+  display: none;
+  position: absolute;
+  background-color: $grey;
+  opacity: 0.9;
+  min-width: 100px;
+}
+
+.dd-content a {
+  display: block;
+}
+
+.dd:hover .dd-content { display: block; }

@@ -127,6 +127,28 @@
   background-color: #272a31;
 }
 
+/* drop down menu */
+.dd {
+  position: relative;
+  display: inline-block;
+}
+
+.dd-content {
+  display: none;
+  position: absolute;
+  background-color: #d3d3d3;
+  opacity: 0.9;
+  min-width: 100px;
+}
+
+.dd-content a {
+  display: block;
+}
+
+.dd:hover .dd-content {
+  display: block;
+}
+
 .logo_nav {
   height: 35px;
   width: auto;
@@ -461,7 +483,7 @@ a {
 
 a:hover {
   text-decoration: none;
-  color: #d3d3d3;
+  color: #ec5242;
 }
 
 .h-px-50 {
@@ -482,6 +504,10 @@ a:hover {
 
 .zindex-0 {
   z-index: 0;
+}
+
+.zindex-5 {
+  z-index: 5;
 }
 
 .border_width {
