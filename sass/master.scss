@@ -2,6 +2,7 @@
 @import 'variables.scss';
 @import 'components.scss';
 @import 'media-queries.scss';
+@import 'aboutus.scss';
 
 $colors:(red:$red, black:$black, grey:$grey, darkred:$darkred, darkgrey:$darkgrey, white:#fff);
 
@@ -88,12 +89,12 @@ padding-top: 80px;
 
 .pad-sm-10{
    
-  padding: 20px;
+  padding: 10px;
  
 }
 
 .pad-left{
-    padding-left: 20px;
+    padding-left: 10px;
 }
 
 .p-top{

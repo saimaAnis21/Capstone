@@ -23,6 +23,10 @@
   font-size: 30px;
 }
 
+.font_size_lg {
+  font-size: 40px;
+}
+
 .font_size_big {
   font-size: 60px;
 }
@@ -60,12 +64,6 @@
   top: 10px;
   left: 30px;
   z-index: 5;
-}
-
-.logo_nav {
-  height: 35px;
-  width: auto;
-  top: 20px;
 }
 
 /* Hero section classes */
@@ -121,6 +119,38 @@
   background-color: #272A31;
 }
 
+.logo_nav {
+  height: 35px;
+  width: auto;
+  top: 20px;
+  z-index: 5;
+}
+
+.programs {
+  width: 90%;
+  padding-top: 50px;
+  padding-bottom: 20px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(5, 1fr);
+  row-gap: 10px;
+}
+
+@media only screen and (min-width: 900px) {
+  .w-top-nav {
+    width: 25%;
+  }
+}
+@media (min-width: 768px) and (max-width: 900px) {
+  .w-top-nav {
+    width: 50%;
+  }
+}
+@media only screen and (max-width: 830px) {
+  .logo_nav {
+    display: none;
+  }
+}
 /*View below 768px Mobile V*/
 @media only screen and (max-width: 768px) {
   .d-mob-none {
@@ -128,7 +158,7 @@
   }
 
   .width-sm-55 {
-    width: 55%;
+    width: 20%;
   }
 }
 main {
@@ -142,16 +172,6 @@ main {
 .main-prog {
   height: 580px;
   background-image: url("../backgrounds/TEDx_bg.png");
-}
-
-.programs {
-  width: 90%;
-  padding-top: 50px;
-  padding-bottom: 20px;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(5, 1fr);
-  row-gap: 10px;
 }
 
 .prog-item {
@@ -203,6 +223,7 @@ main {
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: 1fr;
     column-gap: 10px;
+    width: 90%;
   }
 
   .prog-item {
@@ -241,6 +262,76 @@ main {
     width: 70%;
   }
 }
+.border-grey {
+  border: #D3D3D3 solid 1px;
+}
+
+.top-border-grey {
+  border-top: #D3D3D3 solid 1px;
+}
+
+.p-20 {
+  padding: 20px;
+}
+
+.w-300-px {
+  width: 300px;
+}
+
+@media (max-width: 768px) {
+  .h-hero-sm {
+    height: 850px;
+  }
+}
+
+.logo-div {
+  height: 350px;
+}
+
+.past-div {
+  height: 700px;
+}
+
+.div-past-con {
+  width: 400px;
+  height: 250px;
+  position: relative;
+}
+
+.div-past-con:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  background-color: #EC5242;
+  opacity: 0.5;
+}
+
+.bg-pic1 {
+  background: url("../images/cong1.jpeg");
+}
+
+.bg-pic2 {
+  background: url("../images/conf4.jpeg");
+}
+
+.flex-past-con {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, 1fr);
+  row-gap: 10px;
+}
+@media (min-width: 768px) {
+  .flex-past-con {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    column-gap: 10px;
+  }
+}
+
 .bg-red {
   background-color: #EC5242;
 }
@@ -358,11 +449,11 @@ a:hover {
 }
 
 .pad-sm-10 {
-  padding: 20px;
+  padding: 10px;
 }
 
 .pad-left {
-  padding-left: 20px;
+  padding-left: 10px;
 }
 
 .p-top {

@@ -23,10 +23,35 @@
   font-size: 30px;
 }
 
+.font_size_lg {
+  font-size: 40px;
+}
+
 .font_size_big {
   font-size: 60px;
 }
 
+.all-upper-case {
+  text-transform: uppercase;
+}
+
+.txt-undrline {
+  text-decoration: underline;
+}
+
+.txt-italic {
+  font-style: italic;
+}
+
+.line_height_60 {
+  line-height: 60px;
+}
+
+.line_height_sm {
+  line-height: 15px;
+}
+
+/* header Classes */
 .right_nav {
   display: none;
   height: 100%;
@@ -41,73 +66,112 @@
   z-index: 5;
 }
 
-.logo_nav {
-  height: 35px;
-  width: auto;
-  top: 20px;
-}
-
+/* Hero section classes */
 .hero_sec {
   height: 700px;
-  top: 0px;
   z-index: 1;
   background-image: url("../backgrounds/white-wood-wall-texture-bg.jpg");
 }
-@media (min-width: 768px) {
-  .hero_sec {
-    top: 130px;
-  }
-}
 
-.width-para {
-  width: 100%;
-}
-@media (min-width: 768px) {
-  .width-para {
-    width: 50%;
-  }
-}
-
-.main-prog {
-  height: 600px;
-  background-image: url("../backgrounds/TEDx_bg.png");
-  position: absolute;
-  top: 700px;
-  width: 100%;
-}
-@media (min-width: 768px) {
-  .main-prog {
-    top: 830px;
-  }
-}
-
+/* Main Program Classes */
 .mp-undrline {
   width: 50px;
   height: 2px;
   background-color: #EC5242;
 }
 
-.mp-wrap {
+.flex-wrap {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
+/* tickets classes */
+.tkts {
+  width: 300px;
+  height: 80px;
+  background-color: #EC5242;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.grey-undrline {
+  width: 25px;
+  height: 2px;
+  background-color: #D3D3D3;
+}
+
+/* featured speakers classes */
+.speakers-item {
+  display: flex;
+  align-items: flex-start;
+}
+
+.spkr-img {
+  width: 120px;
+  height: 120px;
+}
+
+/* Partners classes */
+.partners {
+  height: 200px;
+  background-color: #272A31;
+}
+
+.logo_nav {
+  height: 35px;
+  width: auto;
+  top: 20px;
+  z-index: 5;
+}
+
 .programs {
+  width: 90%;
   padding-top: 50px;
   padding-bottom: 20px;
-  width: 90%;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(5, 1fr);
   row-gap: 10px;
 }
-@media (min-width: 768px) {
-  .programs {
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: 1fr;
-    column-gap: 10px;
+
+@media only screen and (min-width: 900px) {
+  .w-top-nav {
+    width: 25%;
   }
+}
+@media (min-width: 768px) and (max-width: 900px) {
+  .w-top-nav {
+    width: 50%;
+  }
+}
+@media only screen and (max-width: 830px) {
+  .logo_nav {
+    display: none;
+  }
+}
+/*View below 768px Mobile V*/
+@media only screen and (max-width: 768px) {
+  .d-mob-none {
+    display: none;
+  }
+
+  .width-sm-55 {
+    width: 20%;
+  }
+}
+main {
+  top: 0px;
+}
+
+.width-para {
+  width: 100%;
+}
+
+.main-prog {
+  height: 580px;
+  background-image: url("../backgrounds/TEDx_bg.png");
 }
 
 .prog-item {
@@ -118,10 +182,153 @@
   padding-bottom: 10px;
   padding-top: 10px;
 }
-@media (min-width: 768px) {
+
+.feat-spkrs {
+  height: 950px;
+  background-color: white;
+}
+
+.speakers-grid {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(6, 1fr);
+  row-gap: 10px;
+}
+
+.partners img {
+  height: 50px;
+  width: auto;
+}
+
+.width-hero {
+  width: 90%;
+}
+
+/*View Above 768px Desktop V*/
+@media only screen and (min-width: 768px) {
+  main {
+    top: 130px;
+  }
+
+  .width-para {
+    width: 50%;
+  }
+
+  .main-prog {
+    height: 400px;
+  }
+
+  .programs {
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr;
+    column-gap: 10px;
+    width: 90%;
+  }
+
   .prog-item {
     flex-direction: column;
     height: 100%;
+  }
+
+  .feat-spkrs {
+    height: 700px;
+  }
+
+  .speakers-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    column-gap: 10px;
+    width: 75%;
+  }
+
+  .partners img {
+    height: 60px;
+  }
+
+  .left-md-150 {
+    left: 150px;
+  }
+
+  .right-md-150 {
+    right: 150px;
+  }
+
+  .p-md-absolute {
+    position: absolute;
+  }
+
+  .width-hero {
+    width: 70%;
+  }
+}
+.border-grey {
+  border: #D3D3D3 solid 1px;
+}
+
+.top-border-grey {
+  border-top: #D3D3D3 solid 1px;
+}
+
+.p-20 {
+  padding: 20px;
+}
+
+.w-300-px {
+  width: 300px;
+}
+
+@media (max-width: 768px) {
+  .h-hero-sm {
+    height: 850px;
+  }
+}
+
+.logo-div {
+  height: 350px;
+}
+
+.past-div {
+  height: 700px;
+}
+
+.div-past-con {
+  width: 400px;
+  height: 250px;
+  position: relative;
+}
+
+.div-past-con:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  background-color: #EC5242;
+  opacity: 0.5;
+}
+
+.bg-pic1 {
+  background: url("../images/cong1.jpeg");
+}
+
+.bg-pic2 {
+  background: url("../images/conf4.jpeg");
+}
+
+.flex-past-con {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, 1fr);
+  row-gap: 10px;
+}
+@media (min-width: 768px) {
+  .flex-past-con {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    column-gap: 10px;
   }
 }
 
@@ -233,18 +440,8 @@ a:hover {
   padding-top: 80px;
 }
 
-.width-sm-90 {
+.width-90 {
   width: 90%;
-}
-
-@media (max-width: 768px) {
-  .d-mob-none {
-    display: none;
-  }
-}
-
-.line_height_60 {
-  line-height: 60px;
 }
 
 .pad_top {
@@ -252,44 +449,32 @@ a:hover {
 }
 
 .pad-sm-10 {
-  padding: 20px;
+  padding: 10px;
 }
 
 .pad-left {
-  padding-left: 20px;
+  padding-left: 10px;
 }
 
-@media (max-width: 768px) {
-  .width-55 {
-    width: 55%;
-  }
+.p-top {
+  padding-top: 5px;
 }
 
-.tkts {
-  width: 300px;
-  height: 80px;
-  background-color: #EC5242;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.p-bottom {
+  padding-bottom: 5px;
 }
 
-@media only screen and (min-width: 768px) {
-  .left-md-150 {
-    left: 150px;
-  }
+.p-top-40 {
+  padding-top: 40px;
+}
 
-  .right-md-150 {
-    right: 150px;
-  }
+.footer-div {
+  height: 150px;
+}
 
-  .p-md-absolute {
-    position: absolute;
-  }
-
-  .width-md-70 {
-    width: 70%;
-  }
+.logo_footer {
+  height: 50px;
+  width: auto;
 }
 
 /*# sourceMappingURL=styles.scss.map */

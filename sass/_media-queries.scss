@@ -1,4 +1,42 @@
 
+ .logo_nav{
+    height: 35px;
+    width: auto;
+    top:20px;
+    z-index: 5;
+}
+
+.programs{
+    width: 90%;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 1fr);
+    row-gap: 10px;
+}
+
+@media only screen and (min-width:900px){
+.w-top-nav{
+    width:25%;
+ }
+}
+
+@media (min-width:768px) and (max-width:900px){
+    .w-top-nav{
+        width:50%;
+    }
+}
+
+@media only screen and (max-width:830px){
+
+    .logo_nav{
+        display: none;
+    }
+ 
+}
+
+
 /*View below 768px Mobile V*/
 @media only screen and (max-width:768px){
 
@@ -7,7 +45,7 @@
     }
 
     .width-sm-55{
-        width: 55%;
+        width: 20%;
     }
 }
 
@@ -24,15 +62,6 @@ main{
     background-image: url('../backgrounds/TEDx_bg.png');
 }
 
-.programs{
-    width: 90%;
-    padding-top: 50px;
-    padding-bottom: 20px;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(5, 1fr);
-    row-gap: 10px;
-}
 
 .prog-item{
     display: flex;
@@ -85,7 +114,7 @@ main{
     grid-template-columns: repeat(5,1fr);
     grid-template-rows: 1fr;
     column-gap: 10px;
-    
+    width: 90%;
 }
 
 .prog-item{
@@ -124,5 +153,6 @@ main{
          width: 70%;
      }
 
-    
+   
  }
+
