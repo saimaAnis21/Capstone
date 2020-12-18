@@ -3,6 +3,7 @@
 @import 'components.scss';
 @import 'media-queries.scss';
 @import 'aboutus.scss';
+@import 'tickets.scss';
 
 $colors:(red:$red, black:$black, grey:$grey, darkred:$darkred, darkgrey:$darkgrey, white:#fff);
 
@@ -117,6 +118,9 @@ padding-top: 80px;
     width: auto;
 }
 
+.border-red{
+    border:$red solid 3px;
+}
 
 
 

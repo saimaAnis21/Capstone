@@ -1,0 +1,38 @@
+
+.tkt-div{
+    height: 400px;
+}
+
+@media (max-width:768px){
+.chng-pos{
+    position: absolute;
+    left:80px;
+    top:120px;
+  }
+}
+@media (min-width:768px){
+
+.tkt-grid{
+    
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(4,1fr);
+    width:80%;
+    border:$red dotted 3px;
+  
+}
+
+.tkt-item{
+    border:$grey solid 1px;
+    padding-top: 5px;
+    overflow-wrap: normal;
+
+}
+
+.tkt-item-2col{
+    grid-column-start: 3;
+    grid-column-end: 5;
+
+}
+
+}

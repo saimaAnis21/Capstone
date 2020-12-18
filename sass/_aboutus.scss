@@ -1,3 +1,9 @@
+
+li{
+    display: inline;
+}
+
+
 .border-grey{
    
     border:$grey solid 1px;
@@ -22,13 +28,15 @@
 }
 
 .logo-div{
-    height:350px;
-
+    height:400px;
+   
 }
 
 .past-div{
     height:700px;
+   
 }
+
 
 .div-past-con{
     width:400px;
@@ -63,9 +71,49 @@
     grid-template-rows: repeat(2, 1fr);
     row-gap: 10px;
 
-    @media(min-width:768px){
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: 1fr;
-        column-gap: 10px;
+}
+
+.bg-color-black-md{
+    background-color:white;
+   
+}
+
+.txt-color-white-md{
+    color:$black;
+}
+
+/* media queries for Desktop V */
+
+@media (min-width:768px){
+
+
+    .logo-div{
+        height: 350px;
+        
     }
+
+    .past-div{
+        height:400px;
+        
+    }
+
+    .flex-past-con{
+       grid-template-columns: repeat(2, 1fr);
+       grid-template-rows: 1fr;
+       column-gap: 10px;
+       
+    }
+
+    .bg-color-black-md{
+        background-color: $black;
+        
+     }
+
+    .txt-color-white-md{
+        color:white;
+        
+    }
+
+    
+
 }
