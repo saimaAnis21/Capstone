@@ -7,121 +7,109 @@
 
 $colors:(red:$red, black:$black, grey:$grey, darkred:$darkred, darkgrey:$darkgrey, white:#fff);
 
-@each $prop, $value in $colors{
-    .bg-#{$prop}
-    {background-color: $value;}
+@each $prop, $value in $colors {
+  .bg-#{$prop} { background-color: $value; }
 
-    .txt-#{$prop}
-    {color: $value;}
-
+  .txt-#{$prop} { color: $value; }
 }
 
-body{
-    font-family: 'Lato', sans-serif;
-    box-sizing: border-box;
-    padding: 0px;
-    margin: 0px;
-    
+body {
+  font-family: 'Lato', sans-serif;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
-a{
-    text-decoration: none;
-    
+a {
+  text-decoration: none;
 }
 
-a:hover{
-    text-decoration: none;
-    color: $grey;
+a:hover {
+  text-decoration: none;
+  color: $grey;
 }
 
-.h-px-50{
-    height: 50px;
+.h-px-50 {
+  height: 50px;
 }
 
-.h-px-80{
-    height: 80px;
+.h-px-80 {
+  height: 80px;
 }
 
-.p-relative{
-    position: relative;
+.p-relative {
+  position: relative;
 }
 
-.p-absolute{
-    position: absolute;
+.p-absolute {
+  position: absolute;
 }
 
-.zindex-0{
-    z-index: 0;
+.zindex-0 {
+  z-index: 0;
 }
 
-
-.border_width{
-    border-width: 2px;
-    
+.border_width {
+  border-width: 2px;
 }
 
-.border_color_white{
-    border-color: white;
+.border_color_white {
+  border-color: white;
 }
 
-.border_color_red{
-    border-color: red;
+.border_color_red {
+  border-color: red;
 }
 
-.border_style{
-    border-style: solid;
+.border_style {
+  border-style: solid;
 }
 
-.p-10{
-    padding: 10px;
-}
-
-.pad-top-80{
-padding-top: 80px;
-}
-
-.width-90{
-    width: 90%;
-}
-
-.pad_top{
-    margin-top: 20px;
-}
-
-.pad-sm-10{
-   
+.p-10 {
   padding: 10px;
- 
 }
 
-.pad-left{
-    padding-left: 10px;
+.pad-top-80 {
+  padding-top: 80px;
 }
 
-.p-top{
-    padding-top: 5px;
-}
-.p-bottom{
-    padding-bottom: 5px;
+.width-90 {
+  width: 90%;
 }
 
-.p-top-40{
-    padding-top: 40px;
+.pad_top {
+  margin-top: 20px;
 }
 
-.footer-div{
-    height:150px;
+.pad-sm-10 {
+  padding: 10px;
 }
 
-.logo_footer{
-    height:50px;
-    width: auto;
+.pad-left {
+  padding-left: 10px;
 }
 
-.border-red{
-    border:$red solid 3px;
+.p-top {
+  padding-top: 5px;
 }
 
+.p-bottom {
+  padding-bottom: 5px;
+}
 
+.p-top-40 {
+  padding-top: 40px;
+}
 
+.footer-div {
+  height: 150px;
+}
 
+.logo_footer {
+  height: 50px;
+  width: auto;
+}
+
+.border-red {
+  border: $red solid 3px;
+}

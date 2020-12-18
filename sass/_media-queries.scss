@@ -1,158 +1,149 @@
 
- .logo_nav{
-    height: 35px;
-    width: auto;
-    top:20px;
-    z-index: 5;
+.logo_nav {
+  height: 35px;
+  width: auto;
+  top: 20px;
+  z-index: 5;
 }
 
-.programs{
-    width: 90%;
-    padding-top: 50px;
-    padding-bottom: 20px;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(5, 1fr);
-    row-gap: 10px;
+.programs {
+  width: 90%;
+  padding-top: 50px;
+  padding-bottom: 20px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(5, 1fr);
+  row-gap: 10px;
 }
 
-@media only screen and (min-width:900px){
-.w-top-nav{
-    width:25%;
- }
+@media only screen and (min-width: 900px) {
+  .w-top-nav {
+    width: 25%;
+  }
 }
 
-@media (min-width:768px) and (max-width:900px){
-    .w-top-nav{
-        width:50%;
-    }
+@media (min-width: 768px) and (max-width: 900px) {
+  .w-top-nav {
+    width: 50%;
+  }
 }
 
-@media only screen and (max-width:830px){
-
-    .logo_nav{
-        display: none;
-    }
- 
-}
-
-
-/*View below 768px Mobile V*/
-@media only screen and (max-width:768px){
-
-    .d-mob-none{    
-       display:none;
-    }
-
-    .width-sm-55{
-        width: 20%;
-    }
-}
-
-main{
-    top: 0px;
-}
-
-.width-para{
-    width: 100%;
-}
-
-.main-prog{
-    height: 580px;
-    background-image: url('../backgrounds/TEDx_bg.png');
+@media only screen and (max-width: 830px) {
+  .logo_nav {
+    display: none;
+  }
 }
 
 
-.prog-item{
-    display: flex;
-    align-items: center;
-    background-color: rgba($color: grey, $alpha: 0.5);
-    height: 60px;
-    padding-bottom: 10px;
-    padding-top: 10px;
+/* View below 768px Mobile V */
+@media only screen and (max-width: 768px) {
+  .d-mob-none {
+    display: none;
+  }
+
+  .width-sm-55 {
+    width: 20%;
+  }
 }
 
-.feat-spkrs{
-    height: 950px;
-    background-color: white;
+main {
+  top: 0;
 }
 
-.speakers-grid{
-    display: grid;
-    width: 100%;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(6,1fr);
-    row-gap: 10px;
+.width-para {
+  width: 100%;
 }
 
-.partners img{
-    height: 50px;
-    width: auto;
+.main-prog {
+  height: 580px;
+  background-image: url('../backgrounds/TEDx_bg.png');
 }
 
-.width-hero{
-    width: 90%;
+.prog-item {
+  display: flex;
+  align-items: center;
+  background-color: rgba($color: grey, $alpha: 0.5);
+  height: 60px;
+  padding-bottom: 10px;
+  padding-top: 10px;
 }
 
-/*View Above 768px Desktop V*/
-@media only screen and (min-width: 768px){
-
-    main{
-        top:130px;
-    }
-
-    .width-para{
-        width: 50%;
-    }
-
-
-.main-prog{
-   height: 400px;
+.feat-spkrs {
+  height: 950px;
+  background-color: white;
 }
 
-.programs{
-    grid-template-columns: repeat(5,1fr);
+.speakers-grid {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(6, 1fr);
+  row-gap: 10px;
+}
+
+.partners img {
+  height: 50px;
+  width: auto;
+}
+
+.width-hero {
+  width: 90%;
+}
+
+/* View Above 768px Desktop V */
+@media only screen and (min-width: 768px) {
+  main {
+    top: 130px;
+  }
+
+  .width-para {
+    width: 50%;
+  }
+
+  .main-prog {
+    height: 400px;
+  }
+
+  .programs {
+    grid-template-columns: repeat(5, 1fr);
     grid-template-rows: 1fr;
     column-gap: 10px;
     width: 90%;
-}
+  }
 
-.prog-item{
+  .prog-item {
     flex-direction: column;
     height: 100%;
-}
+  }
 
-.feat-spkrs{
-  height: 700px;
-}
+  .feat-spkrs {
+    height: 700px;
+  }
 
-.speakers-grid{
-    grid-template-columns: repeat(2,1fr);
-    grid-template-rows: repeat(3,1fr);
+  .speakers-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     column-gap: 10px;
     width: 75%;
-}
+  }
 
-.partners img{
+  .partners img {
     height: 60px;
+  }
+
+  .left-md-150 {
+    left: 150px;
+  }
+
+  .right-md-150 {
+    right: 150px;
+  }
+
+  .p-md-absolute {
+    position: absolute;
+  }
+
+  .width-hero {
+    width: 70%;
+  }
 }
-   
-    .left-md-150{
-       left:150px;
-      }
- 
-      .right-md-150{
-         right: 150px;
-     }
- 
-     .p-md-absolute{
-         position: absolute;
-     }
- 
-     .width-hero{
-         width: 70%;
-     }
-
-   
- }
-

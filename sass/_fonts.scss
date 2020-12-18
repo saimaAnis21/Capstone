@@ -1,59 +1,59 @@
-@font-face {font-family: "COCOGOOSE"; src: url('../fonts/Cocogoose_trial.otf'); } 
+@font-face { font-family: "COCOGOOSE"; src: url('../fonts/Cocogoose_trial.otf'); }
 
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap');
 
-.font_coco{
-  font-family: 'COCOGOOSE';
+.font_coco {
+  font-family: 'COCOGOOSE', sans-serif;
 }
 
-.wt_300{
+.wt_300 {
   font-weight: 300;
 }
 
-.font_size_xsm{
-    font-size: 12px;
+.font_size_xsm {
+  font-size: 12px;
 }
 
-.font_size_sm{
-    font-size: 20px;
+.font_size_sm {
+  font-size: 20px;
 }
 
-.font_size_med{
-    font-size:30px;
+.font_size_med {
+  font-size: 30px;
 }
 
-.font_size_lg{
-    font-size: 40px;
+.font_size_lg {
+  font-size: 40px;
 }
 
-.font_size_big{
-    font-size: 60px;
+.font_size_big {
+  font-size: 60px;
 }
 
-.all-upper-case{
-    text-transform: uppercase;
+.all-upper-case {
+  text-transform: uppercase;
 }
 
-.txt-undrline{
-    text-decoration: underline;
+.txt-undrline {
+  text-decoration: underline;
 }
 
-.txt-italic{
-    font-style: italic;
+.txt-italic {
+  font-style: italic;
 }
 
-.line_height_60{
-    line-height: 60px;
+.line_height_60 {
+  line-height: 60px;
 }
 
-.line_height_sm{
-line-height: 15px;
+.line_height_sm {
+  line-height: 15px;
 }
 
-.v-white{
-    color: whitesmoke;
+.v-white {
+  color: whitesmoke;
 }
 
-.bg-lightgrey{
-    background-color: gray;
+.bg-lightgrey {
+  background-color: gray;
 }
