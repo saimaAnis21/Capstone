@@ -1,11 +1,8 @@
-# Capstone
+# A TEDx Conference Website.
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-![screenshot](images/screenshot-tedx.png)
-
-# A TEDx Conference Website.
-
 This is a TEDx conference website, which has three pages: 1- The Main Page 2- The About Us page 3- The Tickets page. The website provides information about the global TEDx conference to be held on Jan 2021. It has the details of all the speakers and a link from where tickets can be bought.
+![screenshot](images/screenshot-tedx.png)
 
 Additional description about the project and its features.
 
