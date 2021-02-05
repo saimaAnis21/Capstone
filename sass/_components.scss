@@ -1,0 +1,92 @@
+
+/* header Classes */
+.right_nav {
+  display: none;
+  height: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hambrgr {
+  display: inline;
+  top: 10px;
+  left: 30px;
+  z-index: 5;
+}
+
+/* Hero section classes */
+
+.hero_sec {
+  height: 700px;
+  z-index: 1;
+  background-image: url('../backgrounds/white-wood-wall-texture-bg.jpg');
+}
+
+/* Main Program Classes */
+
+.mp-undrline {
+  width: 50px;
+  height: 2px;
+  background-color: $red;
+}
+
+.flex-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* tickets classes */
+.tkts {
+  width: 300px;
+  height: 80px;
+  background-color: $red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.grey-undrline {
+  width: 25px;
+  height: 2px;
+  background-color: $grey;
+}
+
+/* featured speakers classes */
+
+.speakers-item {
+  display: flex;
+  align-items: flex-start;
+}
+
+.spkr-img {
+  width: 120px;
+  height: 120px;
+}
+
+/* Partners classes */
+
+.partners {
+  height: 200px;
+  background-color: $black;
+}
+
+/* drop down menu */
+.dd {
+  position: relative;
+  display: inline-block;
+}
+
+.dd-content {
+  display: none;
+  position: absolute;
+  background-color: $grey;
+  opacity: 0.9;
+  min-width: 100px;
+}
+
+.dd-content a {
+  display: block;
+}
+
+.dd:hover .dd-content { display: block; }
